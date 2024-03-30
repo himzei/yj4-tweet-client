@@ -8,7 +8,7 @@ import Home from "./routes/Home";
 import Login from "./routes/Login";
 import SignUp from "./routes/SignUp";
 import Profile from "./routes/Profile";
-import ProtectedRoute from "./components/ProtectedRoute";
+// import ProtectedRoute from "./components/ProtectedRoute";
 import SocialKakao from "./routes/SocialKakao";
 import HomeToRoute from "./components/HomeToRoute";
 import TweetForm from "./routes/TweetForm";
@@ -24,17 +24,17 @@ const router = createBrowserRouter([
       {
         path: "",
         element: (
-          <ProtectedRoute>
-            <Home />
-          </ProtectedRoute>
+          // <ProtectedRoute>
+          <Home />
+          // </ProtectedRoute>
         ),
       },
       {
         path: "profile",
         element: (
-          <ProtectedRoute>
-            <Profile />
-          </ProtectedRoute>
+          // <ProtectedRoute>
+          <Profile />
+          // </ProtectedRoute>
         ),
       },
       {
