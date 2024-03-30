@@ -43,7 +43,7 @@ export default function TweetForm() {
       <LayoutWithMenu>
         <div className="w-full border border-neutral-200 rounded-2xl flex flex-col shadow-md">
           <div className="p-4">
-            <Avatar photo={data?.user.avatar} size="size-10" />
+            <Avatar photo={data?.user.avatar} size="" />
           </div>
           <form onSubmit={handleSubmit(onValid)} className="flex flex-col ">
             <div className="flex flex-col">
