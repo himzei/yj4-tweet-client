@@ -69,7 +69,6 @@ export async function apiPostLogout() {
 
 // 트윗 글쓰기
 export async function apiPostTweetCreate({ formData, file }) {
-  console.log(formData, file);
   try {
     const data = new FormData();
     data.append("formData", formData.content);
