@@ -14,7 +14,7 @@ export default function Avatar({
         <div
           className={`bg-neutral-300 rounded-full ${size} flex justify-center items-center text-white p-2`}
         >
-          <IoPerson size={size} />
+          <IoPerson size="20" />
         </div>
       ) : (
         <div className={`${size} rounded-full overflow-hidden`}>

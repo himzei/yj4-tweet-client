@@ -50,7 +50,7 @@ export default function LayoutWithMenu({ children }) {
             }}
             className="flex justify-center items-center"
           >
-            <Avatar size="w-10 h-10" text="hidden" photo={data?.user?.avatar} />
+            <Avatar size="size-10" text="hidden" photo={data?.user?.avatar} />
           </Link>
 
           <button
