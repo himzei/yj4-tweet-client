@@ -12,6 +12,7 @@ export default function LayoutWithMenu({ children }) {
   const { data } = useSession();
   const { pathname } = useLocation();
 
+  console.log(data);
   const handleLogout = async () => {
     const data = await apiPostLogout();
     if (data?.result) {
