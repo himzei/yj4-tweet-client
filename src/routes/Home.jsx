@@ -37,16 +37,16 @@ export default function Home() {
                   <Link
                     to={`/profile`}
                     state={{
-                      id: item.writer._id,
-                      username: item.writer.username,
-                      photo: item.writer.avatar,
+                      id: item?.writer._id,
+                      username: item?.writer.username,
+                      photo: item?.writer.avatar,
                     }}
                     className="p-4"
                   >
                     <Avatar
                       size="size-12"
-                      username={item.writer.username}
-                      photo={item.writer.avatar}
+                      username={item?.writer.username}
+                      photo={item?.writer.avatar}
                     />
                   </Link>
                   {/* photo */}

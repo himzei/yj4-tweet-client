@@ -9,6 +9,8 @@ import useSession from "../lib/useSession";
 
 export default function LayoutWithMenu({ children }) {
   const queryClient = useQueryClient();
+  const { data } = useSession();
+  const { pathname } = useLocation();
 
   const handleLogout = async () => {
     const data = await apiPostLogout();
@@ -16,8 +18,6 @@ export default function LayoutWithMenu({ children }) {
       await queryClient.invalidateQueries("getSession");
     }
   };
-  const { pathname } = useLocation();
-  const { data } = useSession();
 
   return (
     <>
@@ -44,9 +44,9 @@ export default function LayoutWithMenu({ children }) {
           <Link
             to={`/profile`}
             state={{
-              id: data?.user.id,
-              username: data?.user.username,
-              photo: data?.user.avatar,
+              id: data?.user?.id,
+              username: data?.user?.username,
+              photo: data?.user?.avatar,
             }}
             className="flex justify-center items-center"
           >
